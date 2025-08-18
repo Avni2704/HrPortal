@@ -32,7 +32,7 @@ public class DriverInstance extends Variables {
         js.executeScript("window.scrollBy(0, 500);");
     }
     public void scrollRight() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver; //
 
         // Scroll right by 500 pixels horizontally
         js.executeScript("window.scrollBy(500, 0);");
