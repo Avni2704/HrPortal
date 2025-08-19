@@ -27,7 +27,7 @@ public class EmployeeLoginSteps extends DriverInstance {
             driver = new ChromeDriver(options);
         }
         driver.manage().window().maximize();
-       // driver.get("https://hrms.uat.directintegrate.com/");
+        driver.get("https://hrms.uat.directintegrate.com/");
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
@@ -149,7 +149,7 @@ public class EmployeeLoginSteps extends DriverInstance {
     //TC006
     @Then("user open new browser")
     public void user_open_new_browser() {
-      //  driver.get("https://hrms.uat.directintegrate.com/");
+        driver.get("https://hrms.uat.directintegrate.com/");
         driver.manage().window().maximize();
     }
 
