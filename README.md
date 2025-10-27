@@ -33,6 +33,23 @@
  tags = "@IHP-61-003", //to specify which sceanrio to run
  plugin = { "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" }) //report
 ```
+## ▶️ <ins> RUN </ins>
+### 1. Update the TestRunner.java. //tags or feature files
+### 2. Bash the command
+```
+mvn test -Dtest="testRunner.TestRunner"
+```
+OR
+### 2. Run with tags
+```
+mvn test -Dtest="testRunner.TestRunner" "-Dcucumber.filter.tags=@NewTC"
+```
 
+### 3. Wait for it to complete
 
-
+## 📊 <ins> Report </ins>
+### 1. Generate allure report
+### 2. Bash the command
+```
+allure serve allure-results
+```
