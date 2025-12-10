@@ -218,7 +218,6 @@ Feature: Dashboard Feature
       | "nami@mailsac.com" | "Password@123" |
 
   #TC-U032
-  @test
   Scenario Outline: Verify user can click the 'Bell' Icon to view notifications.
     Given user on the login page
     And the email <email>
@@ -368,3 +367,4 @@ Feature: Dashboard Feature
     Examples:
       | email              | password       |
       | "nami@mailsac.com" | "Password@123" |
+#changes
