@@ -17,7 +17,7 @@
     import org.testng.Assert;
     import org.openqa.selenium.NoSuchElementException;
     import static org.testng.AssertJUnit.*;
-    import static qa.util.ExternalFunction.clearClientAuth;
+    //import static qa.util.ExternalFunction.clearClientAuth;
     import static qa.util.ExternalFunction.waitForLoaderToDisappear;
 
     public class EmployeeDashboard extends DriverInstance {
